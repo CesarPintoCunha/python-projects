@@ -1,6 +1,6 @@
 import secrets
-from art import logo
-from art import stages
+import os
+from art import logo, stages
 from words import word_list
 
 chosen_word = secrets.choice(word_list)
@@ -9,7 +9,7 @@ lives = 6
 
 print(logo)
 
-print(f'Pssst, the solution is {chosen_word}.')
+#print(f'Pssst, the solution is {chosen_word}.')
 
 display = []
 for letter in chosen_word:
@@ -17,7 +17,8 @@ for letter in chosen_word:
 
 while not finish_game:
     guess = input("Guess a letter: ").lower()
-    
+    os.system("clear")
+
     if guess in display:
             print(f"You've already guessed {guess}, chose another letter!")
     
