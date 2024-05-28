@@ -16,7 +16,7 @@ def choose_difficulty():
         print("Not a valid option")
         return choose_difficulty() 
     if difficulty == 'easy':
-        print("You have 10 attempts reamining")
+        print("You have 10 attempts remaining")
         return attempts + 10
     elif difficulty == 'hard':
         print("You have 5 attempts reamining")
