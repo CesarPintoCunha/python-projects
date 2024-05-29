@@ -28,12 +28,12 @@ while end_game is False:
     print(vs)
     print(f"Against B: {random_option_b['name']}, a {random_option_b['description']}, from {random_option_b['country']}.")
 
-    player_guess = input("Who has more followers? Type 'A' or 'B': ")
+    player_guess = input("Who has more followers? Type 'A' or 'B': ").lower()
 
     if followers_option_a > followers_option_b:
-        correct_answer = "A"
+        correct_answer = "a"
     elif followers_option_b > followers_option_a:
-        correct_answer = "B"
+        correct_answer = "b"
     if player_guess != correct_answer:    
         print(f"That's wrong. Final score: {score}.")
         end_game = True
