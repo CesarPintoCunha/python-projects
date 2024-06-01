@@ -47,8 +47,7 @@ def process_choice(customer_choice):
             if drink[item] > resources[item]:
                 print(f"Sorry, there is not enough {item}.")
                 return False
-
-            return True
+        return True
 
 
 
